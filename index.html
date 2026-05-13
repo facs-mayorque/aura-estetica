@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura — Centro de Estética Premium</title>
+  <meta name="description" content="Centro de estética premium en Buenos Aires. Tratamientos faciales, depilación láser, HydraFacial y más con tecnología de última generación." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Aura</a>
+
+      <div class="nav-pill">
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#tecnologia" class="nav-link">Tecnología</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#reservar" class="nav-link">Contacto</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#reservar" class="btn-cta nav-cta">Reservar turno</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <svg class="ham-icon ham-open" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg class="ham-icon ham-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-links">
+      <a href="#servicios" class="mobile-link">Servicios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="#tecnologia" class="mobile-link">Tecnología <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="#testimonios" class="mobile-link">Testimonios <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+      <a href="#reservar" class="mobile-link">Contacto <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></a>
+    </nav>
+    <div class="mobile-cta-wrap">
+      <a href="#reservar" class="btn-cta mobile-cta-btn">Reservar turno</a>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="inicio">
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260508_155101_f2540600-6fe9-433e-8e48-b3f4b72f0727.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <span class="hero-tag" data-reveal>Centro de Estética Premium · Buenos Aires</span>
+      <h1 class="hero-title" data-reveal>
+        Donde la ciencia<br><em>revela tu belleza</em>
+      </h1>
+      <p class="hero-sub" data-reveal>
+        Tratamientos personalizados con tecnología de última generación<br class="break-md">
+        para revelar tu mejor versión
+      </p>
+      <div class="hero-ctas" data-reveal>
+        <a href="#reservar" class="btn-cta hero-btn">
+          Reservar turno
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#servicios" class="btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-label">Explorar</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Tratamientos Faciales</span><span class="dot">·</span>
+      <span>Depilación Láser</span><span class="dot">·</span>
+      <span>HydraFacial MD</span><span class="dot">·</span>
+      <span>Bioestimulación</span><span class="dot">·</span>
+      <span>Radiofrecuencia</span><span class="dot">·</span>
+      <span>Ozonoterapia</span><span class="dot">·</span>
+      <span>Masajes Terapéuticos</span><span class="dot">·</span>
+      <span>Peeling Químico</span><span class="dot">·</span>
+      <span>Tratamientos Faciales</span><span class="dot">·</span>
+      <span>Depilación Láser</span><span class="dot">·</span>
+      <span>HydraFacial MD</span><span class="dot">·</span>
+      <span>Bioestimulación</span><span class="dot">·</span>
+      <span>Radiofrecuencia</span><span class="dot">·</span>
+      <span>Ozonoterapia</span><span class="dot">·</span>
+      <span>Masajes Terapéuticos</span><span class="dot">·</span>
+      <span>Peeling Químico</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ══ SERVICES ══ -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Servicios</span>
+        <h2 class="section-title">Tratamientos diseñados<br><em>para vos</em></h2>
+        <p class="section-sub">Cada servicio está pensado para brindarte resultados visibles desde la primera sesión</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/3985326/pexels-photo-3985326.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Lifting Facial Ultrasónico" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Facial</span>
+            <h3>Lifting Facial Ultrasónico</h3>
+            <p>Tecnología HIFU de alta intensidad que estimula la producción de colágeno para un efecto lifting inmediato y duradero.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/5938260/pexels-photo-5938260.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Depilación Láser Premium" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Láser</span>
+            <h3>Depilación Láser Premium</h3>
+            <p>Láser diodo de última generación para resultados permanentes en todos los fototipos de piel, en el menor tiempo posible.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="HydraFacial MD" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Premium</span>
+            <h3>HydraFacial MD®</h3>
+            <p>El tratamiento facial más demandado del mundo. Limpieza, exfoliación, extracción e hidratación profunda en una sola sesión.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/4046571/pexels-photo-4046571.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Bioestimulación con Dermapen" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Rejuvenecimiento</span>
+            <h3>Bioestimulación Dermapen</h3>
+            <p>Microagujas que estimulan la regeneración natural de la piel, reduciendo cicatrices, poros y signos de envejecimiento.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Radiofrecuencia Corporal" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Corporal</span>
+            <h3>Radiofrecuencia Corporal</h3>
+            <p>Tecnología RF que genera calor controlado en capas profundas de la piel para reafirmar y tensar de forma visible.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="card-img-wrap">
+            <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1" alt="Masajes Terapéuticos" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Bienestar</span>
+            <h3>Masajes Terapéuticos</h3>
+            <p>Técnicas integradas de masoterapia y drenaje linfático para aliviar tensiones y potenciar el bienestar general.</p>
+            <a href="#reservar" class="card-link">Consultar →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TECHNOLOGY ══ -->
+  <section class="section technology" id="tecnologia">
+    <div class="container">
+      <div class="tech-grid">
+        <div class="tech-text" data-reveal>
+          <span class="section-tag">Tecnología</span>
+          <h2 class="section-title">Equipos de última<br><em>generación</em></h2>
+          <p class="section-sub">Invertimos en la tecnología más avanzada disponible para que cada tratamiento tenga el máximo impacto y la mínima incomodidad.</p>
+          <div class="tech-features">
+            <div class="tech-feature">
+              <div class="tech-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <strong>HIFU Ultrasonido Focalizado</strong>
+                <span>Lifting sin cirugía, resultado inmediato y duradero</span>
+              </div>
+            </div>
+            <div class="tech-feature">
+              <div class="tech-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              </div>
+              <div>
+                <strong>Láser Diodo 808nm</strong>
+                <span>Depilación permanente en todos los fototipos</span>
+              </div>
+            </div>
+            <div class="tech-feature">
+              <div class="tech-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div>
+                <strong>Radiofrecuencia RF4</strong>
+                <span>Reafirmación profunda y duradera sin invasión</span>
+              </div>
+            </div>
+            <div class="tech-feature">
+              <div class="tech-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div>
+                <strong>HydraFacial MD®</strong>
+                <span>Hidratación y limpieza profunda certificada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-visual" data-reveal>
+          <div class="tech-img-frame">
+            <img src="https://images.pexels.com/photos/3985326/pexels-photo-3985326.jpeg?auto=compress&cs=tinysrgb&w=900&h=1100&dpr=1" alt="Tecnología de punta en estética" />
+            <div class="tech-img-badge">
+              <span class="badge-num">15</span>
+              <span class="badge-suffix">+</span>
+              <span class="badge-text">años de<br>experiencia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS ══ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-reveal>
+          <div class="stat-number-wrap">
+            <span class="stat-num" data-target="8">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-number-wrap">
+            <span class="stat-num" data-target="3200">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Clientas satisfechas</span>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-number-wrap">
+            <span class="stat-num" data-target="18">0</span>
+          </div>
+          <span class="stat-label">Tratamientos especializados</span>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-number-wrap">
+            <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          </div>
+          <span class="stat-label">Tasa de satisfacción</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="section testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-header centered" data-reveal>
+        <span class="section-tag">Testimonios</span>
+        <h2 class="section-title">Lo que dicen<br><em>nuestras clientas</em></h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Los resultados del lifting facial fueron increíbles. Nunca pensé que sin cirugía podría notar una diferencia tan grande. El equipo es profesional y el lugar es hermoso."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">V</div>
+            <div>
+              <strong>Valentina R.</strong>
+              <span>Lifting Facial HIFU</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card featured" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>"Vine para el HydraFacial y me fui con la piel completamente renovada. Nunca había visto resultados tan inmediatos. Ya reservé mi próximo turno."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">C</div>
+            <div>
+              <strong>Camila M.</strong>
+              <span>HydraFacial MD®</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <blockquote>"La depilación láser fue prácticamente indolora y los resultados se notan desde la primera sesión. La tecnología que tienen es de primer nivel."</blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <strong>Luciana P.</strong>
+              <span>Depilación Láser Premium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BOOKING ══ -->
+  <section class="section booking" id="reservar">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info" data-reveal>
+          <span class="section-tag">Reservas</span>
+          <h2 class="section-title">Empezá tu<br><em>transformación</em></h2>
+          <p class="section-sub">Completá el formulario y te contactaremos en menos de 24 horas para confirmar tu turno.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Palermo, Buenos Aires</span>
+            </div>
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3.06a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="https://wa.me/5491159355881" target="_blank" rel="noopener" style="color:inherit">+54 11 5935-5881</a>
+            </div>
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <a href="https://www.instagram.com/studio.qvanta/" target="_blank" rel="noopener" style="color:inherit">@studio.qvanta</a>
+            </div>
+            <div class="contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Lun–Vie 9:00–20:00 · Sáb 9:00–15:00</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm" data-reveal>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="+54 11..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio">
+              <option value="">Seleccioná un tratamiento</option>
+              <option>Lifting Facial Ultrasónico (HIFU)</option>
+              <option>Depilación Láser Premium</option>
+              <option>HydraFacial MD®</option>
+              <option>Bioestimulación con Dermapen</option>
+              <option>Radiofrecuencia Corporal</option>
+              <option>Masajes Terapéuticos</option>
+              <option>Otro / Consulta general</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje (opcional)</label>
+            <textarea id="mensaje" rows="3" placeholder="¿Tenés alguna consulta en particular?"></textarea>
+          </div>
+          <button type="submit" class="btn-cta form-submit" id="formBtn">
+            Solicitar turno
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">Aura</a>
+          <p>Centro de estética premium en Buenos Aires. Tecnología de última generación, resultados reales.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/studio.qvanta/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@qvanta34" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.95a8.16 8.16 0 0 0 4.77 1.52V7.03a4.85 4.85 0 0 1-1-.34z"/></svg>
+            </a>
+            <a href="https://wa.me/5491159355881" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Servicios</h4>
+          <a href="https://wa.me/5491159355881?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20el%20Lifting%20Facial%20HIFU." target="_blank" rel="noopener">Lifting Facial HIFU</a>
+          <a href="https://wa.me/5491159355881?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20la%20Depilaci%C3%B3n%20L%C3%A1ser." target="_blank" rel="noopener">Depilación Láser</a>
+          <a href="https://wa.me/5491159355881?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20el%20HydraFacial%20MD." target="_blank" rel="noopener">HydraFacial MD®</a>
+          <a href="https://wa.me/5491159355881?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20Bioestimulaci%C3%B3n." target="_blank" rel="noopener">Bioestimulación</a>
+          <a href="https://wa.me/5491159355881?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20Radiofrecuencia%20Corporal." target="_blank" rel="noopener">Radiofrecuencia</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Información</h4>
+          <a href="https://www.instagram.com/studio.qvanta/" target="_blank" rel="noopener">Sobre nosotras</a>
+          <a href="#tecnologia">Tecnología</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#reservar">Reservar turno</a>
+          <a href="https://www.instagram.com/studio.qvanta/" target="_blank" rel="noopener">Política de privacidad</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Horarios</h4>
+          <div class="hours-grid">
+            <span>Lun — Vie</span>
+            <span>9:00 — 20:00</span>
+            <span>Sábados</span>
+            <span>9:00 — 15:00</span>
+            <span>Domingos</span>
+            <span>Cerrado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Aura — Centro de Estética. Todos los derechos reservados.</span>
+        <span>Creada por <a href="https://www.instagram.com/studio.qvanta/" target="_blank" rel="noopener" class="qvanta-credit">Qvanta Studio</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
